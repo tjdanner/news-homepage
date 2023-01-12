@@ -1,7 +1,7 @@
 body {
     font-family: 'Inter';
     font-size: 12px;
-    padding: 64px;
+    padding: 0 10%;
 }
 
 header {
@@ -16,7 +16,7 @@ header img {
 }
 
 nav {
-    width: 50%;
+    width: 40%;
     display: flex;
     justify-content: space-between;
     list-style: none;
@@ -30,6 +30,8 @@ nav a{
 .container {
     display: flex;
     gap: 1.5em;
+    margin-bottom: 64px;
+    height: 350px;
 }
 
 .banner {
@@ -61,6 +63,7 @@ nav a{
 .latest-news {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background-color: hsl(240, 100%, 5%);
     color: white;
     padding: 1rem;
@@ -73,15 +76,40 @@ nav a{
 }
 
 .latest-news div:nth-of-type(1), .latest-news div:nth-of-type(2){
-    border-bottom: .5px solid hsl(36, 100%, 99%);
+    padding-bottom: 1em;
+    border-bottom: .5px solid hsl(233, 8%, 79%);
 }
 
 .stories {
     display: flex;
     justify-content: space-between;
     width: 100%;
+    height: 100px;
+}
+
+.stories img {
+    height: 100%;
+    margin-right: 1.5em;
+}
+
+.stories div {
+    display: flex;
+}
+
+.stories div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .stories h2{
+    color: hsl(233, 8%, 79%);
+}
+
+.stories p{
     color: hsl(236, 13%, 42%);
+}
+
+.stories div div > * {
+    margin: 0;
 }
